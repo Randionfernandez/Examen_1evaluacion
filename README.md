@@ -10,3 +10,16 @@
 - `echo "<td>{$description}</td>";`
 - `echo "<td>{$dollar}{$price}</td>";`
 - `echo "<td>";`
+
+He insertado el dolar, cuando se va a ejecutar el eco con la variable price
+- `<td>Price</td>`
+- `<td>`
+- `<?php`
+- `echo '$' . htmlspecialchars($price, ENT_QUOTES);`
+- `?>`
+- `</td>`
+
+5.
+
+- La iamgen de guarda en un tipo
+

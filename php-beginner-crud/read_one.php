@@ -75,7 +75,7 @@
                 <td>Price</td>
                 <td>
                     <?php
-                        echo "$" . htmlspecialchars($price, ENT_QUOTES);  
+                        echo '$' . htmlspecialchars($price, ENT_QUOTES);  
                     ?>      
                 </td>
             </tr>

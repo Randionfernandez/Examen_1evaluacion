@@ -85,7 +85,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     // this will make $row['firstname'] to
     // just $firstname only
     extract($row);
-    $dollar = "$";
+    $dollar = '$';
     // creating new table row per record
     echo "<tr>";
         echo "<td>{$id}</td>";
