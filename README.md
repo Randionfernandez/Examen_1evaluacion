@@ -33,38 +33,40 @@ He insertado el dolar, cuando se va a ejecutar el eco con la variable price
 - Si algun error ha ocurrido el usuario puede verlo.
 - Finalmente, la imagen se guardará si todo esta de manera correcta y no hay ningun error dentro de la BD.
 
-6) 
+6.
 
 - Cuando hago la query para llamar las propiedades de los objetos escribo la propiedades de image.
-- Guardo POST image dentro de una variable $image
+- Guardo POST image dentro de una variable \$image
 - Añado el bind paremetro de image
 - Escribo el codigo html como se tendria que mostrar para subir la imagen
 
-`$query = "UPDATE products`
-`SET name=:name, description=:description, price=:price, image=:image`
-`WHERE id = :id";`
-`// prepare query for excecution`
-`$stmt = $con->prepare($query);`
-`// posted values`
-`$name=htmlspecialchars(strip_tags($_POST['name']));`
-`$description=htmlspecialchars(strip_tags($_POST['description']));`
-`$price=htmlspecialchars(strip_tags($_POST['price']));`
-`$image=htmlspecialchars(strip_tags($_POST['image']));`
+- `$query = "UPDATE products`
+- "" `SET name=:name, description=:description, price=:price, image=:image` ""
+- `WHERE id = :id";`
+- `// prepare query for excecution`
+- `$stmt = $con->prepare($query);`
+- `// posted values`
+- `$name=htmlspecialchars(strip_tags($_POST['name']));`
+- `$description=htmlspecialchars(strip_tags($_POST['description']));` 
+- `$price=htmlspecialchars(strip_tags($_POST['price']));`
+- "" `$image=htmlspecialchars(strip_tags($_POST['image']));` ""
 
-`// bind the parameters`
-`$stmt->bindParam(':name', $name);`
-`$stmt->bindParam(':description', $description);`
-`$stmt->bindParam(':price', $price);`
-`$stmt->bindParam(':image', $image);`
-`$stmt->bindParam(':id', $id);`
+- `// bind the parameters`
+- `$stmt->bindParam(':name', $name);`
+- `$stmt->bindParam(':description', $description);`
+- `$stmt->bindParam(':price', $price);`
+- ""`$stmt->bindParam(':image', $image);` ""
+- `$stmt->bindParam(':id', $id);`
 
-`<td>Photo</td>`
-`<td>`
-`<input type="file" name='image' value="<?php echo $image ? "<img src='uploads/{$image}' style='width:300px;' />" : "No image found.";  ?>"/>`
-`</td>`
+- `<td>Photo</td>`
+- `<td>`
+- `<input type="file" name='image' value="<?php echo $image ? "<img src='uploads/{$image}' style='width:300px;' />" : "No image found."; ?>"/>`
+- `</td>`
 
 ## Repositorio remoto
+
 http://dwejjimenez.hopto.org/Trabajos/Examen_1evaluaci-n/
 
 ## Repositorio github
+
 https://github.com/cifpfbmoll/Examen_1evaluaci-n
