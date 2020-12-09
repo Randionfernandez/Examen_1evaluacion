@@ -34,6 +34,7 @@ He insertado el dolar, cuando se va a ejecutar el eco con la variable price
 - Finalmente, la imagen se guardará si todo esta de manera correcta y no hay ningun error dentro de la BD.
 
 6) 
+
 - Cuando hago la query para llamar las propiedades de los objetos escribo la propiedades de image.
 - Guardo POST image dentro de una variable $image
 - Añado el bind paremetro de image
@@ -61,3 +62,9 @@ He insertado el dolar, cuando se va a ejecutar el eco con la variable price
 `<td>`
 `<input type="file" name='image' value="<?php echo $image ? "<img src='uploads/{$image}' style='width:300px;' />" : "No image found.";  ?>"/>`
 `</td>`
+
+## Repositorio remoto
+http://dwejjimenez.hopto.org/Trabajos/Examen_1evaluaci-n/
+
+## Repositorio github
+https://github.com/cifpfbmoll/Examen_1evaluaci-n
